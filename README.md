@@ -2,7 +2,7 @@
 
 ## Running the server
 
-    node `server.js` <port>
+    node `server.js` <port|$PORT|3000>
 
 ## Example Usage
 

@@ -36,4 +36,8 @@ app.get( '/:dateStr', function( req, res ){
   res.end( JSON.stringify( result ) );
 });
 
-app.listen( process.argv[2] );
+var port = process.env.PORT || process.argv[2] || 3000;
+
+console.log( 'Listening on port ' + port );
+
+app.listen( port );
