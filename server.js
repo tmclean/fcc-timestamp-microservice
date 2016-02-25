@@ -29,7 +29,7 @@ app.get( '/:dateStr', function( req, res ){
     }
     else{
       result.unix = unix;
-      result.natural = formatDate( new Date( unix * 1000 ).toDateString() );
+      result.natural = formatDate( new Date( unix * 1000 ) );
     }
   }
   
